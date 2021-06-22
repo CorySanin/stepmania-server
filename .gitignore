@@ -64,3 +64,5 @@ log/
 
 # Temprorary file
 *.swp
+
+config/
