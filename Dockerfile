@@ -2,7 +2,8 @@ FROM python:alpine3.13
 
 WORKDIR /usr/src/stepmania-server
 
-RUN pip install smserver \
+RUN apk add --no-cache gcc g++ musl-dev \ 
+ && pip install smserver \
  && addgroup -S stepmania \
  && adduser -S stepmania -G stepmania
 
